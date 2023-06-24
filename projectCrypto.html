@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crypto Data</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="searchInput" placeholder="Search..." />
+  <button id="sortButton">Sort by Market Cap</button>
+  <table id="cryptoTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Image</th>
+        <th>Symbol</th>
+        <th>Current Price</th>
+        <th>Total Volume</th>
+      </tr>
+    </thead>
+    <tbody id="cryptoTableBody"></tbody>
+  </table>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
